@@ -1,0 +1,1069 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/proyecto1.o
+resVect CODE 0 0 0 1 2 1
+code CODE 0 0 0 588 2 1
+intVect CODE 0 0 0 16 2 1
+udata_bank0 BANK0 1 20 20 47 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 67-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 67-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 588-1FFF 2
+ENTRY 588-1FFF 2
+IDLOC 2000-2003 2
+CODE 588-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 588-1FFF 2
+STRING 588-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/proyecto1.o
+0 intVect CODE >116:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4 intVect CODE >120:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+5 intVect CODE >121:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+6 intVect CODE >122:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+7 intVect CODE >125:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+9 intVect CODE >126:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+A intVect CODE >127:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+B intVect CODE >128:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+C intVect CODE >129:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+D intVect CODE >130:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+E intVect CODE >131:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+F intVect CODE >132:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10 intVect CODE >133:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+11 intVect CODE >136:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+12 intVect CODE >137:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+13 intVect CODE >138:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+14 intVect CODE >139:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+15 intVect CODE >140:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+0 resVect CODE >111:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+0 resVect CODE >113:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+0 code CODE >143:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+100 code CODE >1311:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+101 code CODE >1312:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+102 code CODE >1313:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+103 code CODE >1314:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+104 code CODE >1315:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+105 code CODE >1316:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+106 code CODE >1317:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+107 code CODE >1318:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+108 code CODE >1319:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+109 code CODE >1320:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10A code CODE >1321:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10B code CODE >1322:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10C code CODE >1323:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10D code CODE >1324:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10E code CODE >1325:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+10F code CODE >1326:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+110 code CODE >1327:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+111 code CODE >1328:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+112 code CODE >1329:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+113 code CODE >1330:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+200 code CODE >146:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+201 code CODE >147:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+202 code CODE >148:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+203 code CODE >149:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+204 code CODE >150:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+205 code CODE >151:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+206 code CODE >154:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+207 code CODE >155:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+208 code CODE >157:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+209 code CODE >158:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20A code CODE >159:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20B code CODE >160:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20C code CODE >162:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20D code CODE >163:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20E code CODE >164:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+20F code CODE >165:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+210 code CODE >166:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+211 code CODE >168:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+212 code CODE >169:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+213 code CODE >170:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+214 code CODE >171:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+215 code CODE >172:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+216 code CODE >173:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+217 code CODE >174:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+218 code CODE >175:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+219 code CODE >177:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21A code CODE >178:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21B code CODE >179:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21C code CODE >180:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21D code CODE >182:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21E code CODE >183:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+21F code CODE >184:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+220 code CODE >185:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+221 code CODE >187:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+222 code CODE >188:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+223 code CODE >189:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+224 code CODE >190:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+225 code CODE >192:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+226 code CODE >193:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+227 code CODE >194:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+228 code CODE >195:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+229 code CODE >197:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22A code CODE >198:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22B code CODE >199:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22C code CODE >200:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22D code CODE >202:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22E code CODE >203:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+22F code CODE >204:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+230 code CODE >205:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+231 code CODE >207:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+232 code CODE >208:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+233 code CODE >209:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+234 code CODE >210:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+235 code CODE >212:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+236 code CODE >213:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+237 code CODE >215:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+238 code CODE >216:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+239 code CODE >217:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23A code CODE >218:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23B code CODE >220:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23C code CODE >221:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23D code CODE >223:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23E code CODE >224:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+23F code CODE >225:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+240 code CODE >227:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+241 code CODE >228:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+242 code CODE >229:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+243 code CODE >231:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+244 code CODE >232:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+245 code CODE >233:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+246 code CODE >235:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+247 code CODE >236:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+248 code CODE >237:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+249 code CODE >239:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24A code CODE >240:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24B code CODE >241:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24C code CODE >242:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24D code CODE >244:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24E code CODE >245:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+24F code CODE >246:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+250 code CODE >248:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+251 code CODE >249:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+252 code CODE >250:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+253 code CODE >252:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+254 code CODE >253:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+255 code CODE >254:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+256 code CODE >255:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+257 code CODE >256:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+258 code CODE >257:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+259 code CODE >258:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25A code CODE >259:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25B code CODE >260:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25C code CODE >262:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25D code CODE >263:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25E code CODE >264:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+25F code CODE >265:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+260 code CODE >266:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+261 code CODE >267:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+262 code CODE >269:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+263 code CODE >270:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+264 code CODE >271:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+265 code CODE >272:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+266 code CODE >273:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+267 code CODE >274:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+268 code CODE >275:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+269 code CODE >276:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26A code CODE >277:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26B code CODE >278:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26C code CODE >279:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26D code CODE >280:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26E code CODE >282:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+26F code CODE >283:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+270 code CODE >284:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+271 code CODE >285:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+272 code CODE >286:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+273 code CODE >288:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+274 code CODE >289:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+275 code CODE >290:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+276 code CODE >291:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+277 code CODE >292:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+278 code CODE >294:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+279 code CODE >295:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27A code CODE >296:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27B code CODE >297:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27C code CODE >299:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27D code CODE >300:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27E code CODE >301:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+27F code CODE >302:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+280 code CODE >304:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+281 code CODE >305:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+282 code CODE >306:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+283 code CODE >307:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+284 code CODE >309:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+285 code CODE >310:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+286 code CODE >311:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+287 code CODE >312:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+288 code CODE >314:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+289 code CODE >315:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28A code CODE >316:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28B code CODE >317:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28C code CODE >319:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28D code CODE >320:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28E code CODE >321:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+28F code CODE >322:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+290 code CODE >324:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+291 code CODE >325:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+292 code CODE >326:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+293 code CODE >327:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+294 code CODE >329:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+295 code CODE >330:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+296 code CODE >331:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+297 code CODE >332:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+298 code CODE >333:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+299 code CODE >334:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29A code CODE >335:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29B code CODE >336:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29C code CODE >338:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29D code CODE >339:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29E code CODE >340:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+29F code CODE >341:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A0 code CODE >343:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A1 code CODE >344:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A2 code CODE >345:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A3 code CODE >346:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A4 code CODE >348:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A5 code CODE >349:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A6 code CODE >350:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A7 code CODE >351:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A8 code CODE >353:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2A9 code CODE >354:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AA code CODE >356:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AB code CODE >357:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AC code CODE >358:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AD code CODE >359:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AE code CODE >360:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2AF code CODE >361:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B0 code CODE >362:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B1 code CODE >365:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B2 code CODE >366:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B3 code CODE >367:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B4 code CODE >368:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B5 code CODE >370:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B6 code CODE >371:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B7 code CODE >372:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B8 code CODE >373:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2B9 code CODE >374:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BA code CODE >375:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BB code CODE >378:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BC code CODE >379:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BD code CODE >380:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BE code CODE >381:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2BF code CODE >382:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C0 code CODE >383:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C1 code CODE >385:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C2 code CODE >386:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C3 code CODE >387:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C4 code CODE >388:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C5 code CODE >389:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C6 code CODE >390:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C7 code CODE >392:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C8 code CODE >393:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2C9 code CODE >394:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CA code CODE >395:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CB code CODE >396:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CC code CODE >397:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CD code CODE >399:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CE code CODE >400:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2CF code CODE >401:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D0 code CODE >402:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D1 code CODE >403:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D2 code CODE >404:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D3 code CODE >406:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D4 code CODE >407:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D5 code CODE >408:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D6 code CODE >409:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D7 code CODE >410:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D8 code CODE >411:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2D9 code CODE >413:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DA code CODE >414:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DB code CODE >417:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DC code CODE >418:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DD code CODE >419:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DE code CODE >420:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2DF code CODE >421:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E0 code CODE >423:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E1 code CODE >424:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E2 code CODE >425:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E3 code CODE >426:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E4 code CODE >429:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E5 code CODE >430:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E6 code CODE >431:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E7 code CODE >432:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E8 code CODE >434:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2E9 code CODE >435:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2EA code CODE >436:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2EB code CODE >437:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2EC code CODE >438:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2ED code CODE >439:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2EE code CODE >441:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2EF code CODE >442:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F0 code CODE >443:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F1 code CODE >444:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F2 code CODE >445:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F3 code CODE >446:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F4 code CODE >448:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F5 code CODE >449:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F6 code CODE >450:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F7 code CODE >451:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F8 code CODE >452:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2F9 code CODE >453:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FA code CODE >455:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FB code CODE >456:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FC code CODE >457:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FD code CODE >458:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FE code CODE >459:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+2FF code CODE >460:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+300 code CODE >462:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+301 code CODE >463:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+302 code CODE >466:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+303 code CODE >467:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+304 code CODE >468:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+305 code CODE >469:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+306 code CODE >471:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+307 code CODE >472:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+308 code CODE >473:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+309 code CODE >474:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30A code CODE >476:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30B code CODE >477:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30C code CODE >478:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30D code CODE >479:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30E code CODE >481:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+30F code CODE >482:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+310 code CODE >483:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+311 code CODE >484:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+312 code CODE >485:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+313 code CODE >486:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+314 code CODE >488:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+315 code CODE >489:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+316 code CODE >490:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+317 code CODE >491:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+318 code CODE >492:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+319 code CODE >493:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31A code CODE >495:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31B code CODE >496:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31C code CODE >497:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31D code CODE >498:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31E code CODE >499:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+31F code CODE >500:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+320 code CODE >502:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+321 code CODE >503:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+322 code CODE >504:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+323 code CODE >505:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+324 code CODE >506:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+325 code CODE >507:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+326 code CODE >509:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+327 code CODE >510:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+328 code CODE >513:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+329 code CODE >514:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32A code CODE >515:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32B code CODE >516:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32C code CODE >518:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32D code CODE >519:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32E code CODE >520:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+32F code CODE >521:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+330 code CODE >523:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+331 code CODE >524:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+332 code CODE >525:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+333 code CODE >526:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+334 code CODE >528:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+335 code CODE >529:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+336 code CODE >530:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+337 code CODE >531:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+338 code CODE >532:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+339 code CODE >533:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33A code CODE >535:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33B code CODE >536:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33C code CODE >537:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33D code CODE >538:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33E code CODE >539:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+33F code CODE >540:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+340 code CODE >542:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+341 code CODE >543:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+342 code CODE >544:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+343 code CODE >545:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+344 code CODE >546:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+345 code CODE >547:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+346 code CODE >549:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+347 code CODE >550:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+348 code CODE >551:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+349 code CODE >552:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+34A code CODE >553:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+34B code CODE >554:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+34C code CODE >556:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+34D code CODE >557:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+34E code CODE >561:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+350 code CODE >562:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+351 code CODE >563:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+352 code CODE >564:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+354 code CODE >565:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+355 code CODE >566:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+356 code CODE >567:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+357 code CODE >568:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+358 code CODE >569:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+359 code CODE >570:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+35A code CODE >571:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+35C code CODE >572:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+35D code CODE >573:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+35E code CODE >574:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+35F code CODE >575:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+360 code CODE >576:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+361 code CODE >577:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+362 code CODE >578:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+363 code CODE >579:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+364 code CODE >580:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+365 code CODE >581:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+366 code CODE >582:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+367 code CODE >583:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+368 code CODE >584:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+369 code CODE >585:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36A code CODE >586:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36B code CODE >587:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36C code CODE >588:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36D code CODE >589:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36E code CODE >590:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+36F code CODE >591:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+370 code CODE >592:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+371 code CODE >593:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+372 code CODE >594:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+373 code CODE >595:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+374 code CODE >596:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+375 code CODE >597:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+376 code CODE >598:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+377 code CODE >599:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+378 code CODE >600:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+379 code CODE >601:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37A code CODE >602:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37B code CODE >603:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37C code CODE >604:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37D code CODE >605:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37E code CODE >606:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+37F code CODE >607:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+380 code CODE >608:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+381 code CODE >609:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+382 code CODE >610:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+383 code CODE >611:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+384 code CODE >612:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+385 code CODE >613:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+386 code CODE >614:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+387 code CODE >615:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+388 code CODE >616:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+389 code CODE >617:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38A code CODE >618:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38B code CODE >619:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38C code CODE >620:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38D code CODE >621:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38E code CODE >622:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+38F code CODE >623:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+390 code CODE >624:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+391 code CODE >625:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+392 code CODE >626:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+393 code CODE >627:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+394 code CODE >628:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+395 code CODE >629:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+396 code CODE >630:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+397 code CODE >631:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+398 code CODE >632:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+399 code CODE >633:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39A code CODE >634:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39B code CODE >635:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39C code CODE >636:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39D code CODE >637:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39E code CODE >638:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+39F code CODE >639:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A0 code CODE >640:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A1 code CODE >641:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A2 code CODE >642:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A3 code CODE >643:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A4 code CODE >644:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A5 code CODE >645:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A6 code CODE >648:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A8 code CODE >649:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3A9 code CODE >650:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3AA code CODE >651:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3AB code CODE >652:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3AC code CODE >653:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3AD code CODE >656:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3AF code CODE >657:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B0 code CODE >658:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B1 code CODE >659:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B2 code CODE >660:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B3 code CODE >661:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B4 code CODE >662:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B6 code CODE >663:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B7 code CODE >664:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B8 code CODE >665:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3B9 code CODE >666:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3BA code CODE >669:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3BC code CODE >670:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3BD code CODE >671:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3BE code CODE >672:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3BF code CODE >673:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C0 code CODE >674:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C1 code CODE >675:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C2 code CODE >676:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C3 code CODE >677:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C4 code CODE >680:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C6 code CODE >681:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C7 code CODE >682:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3C8 code CODE >683:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CA code CODE >684:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CB code CODE >685:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CC code CODE >686:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CD code CODE >687:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CE code CODE >688:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3CF code CODE >689:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D0 code CODE >690:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D1 code CODE >691:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D2 code CODE >694:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D4 code CODE >695:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D5 code CODE >696:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D6 code CODE >697:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D7 code CODE >698:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D8 code CODE >699:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3D9 code CODE >700:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3DB code CODE >701:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3DC code CODE >702:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3DD code CODE >703:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3DF code CODE >704:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E0 code CODE >705:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E1 code CODE >706:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E2 code CODE >707:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E3 code CODE >708:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E4 code CODE >709:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E5 code CODE >710:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E6 code CODE >711:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E7 code CODE >712:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3E8 code CODE >715:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3EA code CODE >716:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3EB code CODE >717:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3EC code CODE >718:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3ED code CODE >719:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3EE code CODE >722:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F0 code CODE >723:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F1 code CODE >724:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F2 code CODE >725:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F3 code CODE >726:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F4 code CODE >727:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F5 code CODE >730:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F6 code CODE >731:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F7 code CODE >732:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F8 code CODE >735:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3F9 code CODE >736:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FA code CODE >737:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FB code CODE >738:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FC code CODE >741:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FD code CODE >742:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FE code CODE >745:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+3FF code CODE >746:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+400 code CODE >747:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+401 code CODE >748:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+402 code CODE >749:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+403 code CODE >750:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+404 code CODE >751:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+405 code CODE >752:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+406 code CODE >753:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+407 code CODE >754:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+408 code CODE >755:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+409 code CODE >756:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40A code CODE >759:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40B code CODE >760:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40C code CODE >761:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40D code CODE >762:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40E code CODE >763:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+40F code CODE >764:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+410 code CODE >765:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+411 code CODE >768:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+412 code CODE >769:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+413 code CODE >770:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+414 code CODE >771:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+415 code CODE >774:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+416 code CODE >775:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+417 code CODE >776:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+418 code CODE >777:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+419 code CODE >780:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41A code CODE >781:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41B code CODE >782:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41C code CODE >783:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41D code CODE >786:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41E code CODE >787:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+41F code CODE >788:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+420 code CODE >789:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+421 code CODE >792:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+422 code CODE >793:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+423 code CODE >796:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+424 code CODE >797:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+425 code CODE >798:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+426 code CODE >800:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+427 code CODE >801:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+428 code CODE >802:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+429 code CODE >804:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42A code CODE >805:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42B code CODE >806:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42C code CODE >808:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42D code CODE >809:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42E code CODE >810:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+42F code CODE >811:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+430 code CODE >814:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+431 code CODE >815:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+432 code CODE >816:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+433 code CODE >818:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+434 code CODE >819:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+435 code CODE >820:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+436 code CODE >822:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+437 code CODE >823:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+438 code CODE >824:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+439 code CODE >826:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43A code CODE >827:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43B code CODE >828:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43C code CODE >829:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43D code CODE >832:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43E code CODE >833:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+43F code CODE >834:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+440 code CODE >836:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+441 code CODE >837:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+442 code CODE >838:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+443 code CODE >840:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+444 code CODE >841:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+445 code CODE >842:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+446 code CODE >844:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+447 code CODE >845:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+448 code CODE >846:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+449 code CODE >847:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44A code CODE >850:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44B code CODE >851:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44C code CODE >852:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44D code CODE >854:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44E code CODE >855:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+44F code CODE >856:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+450 code CODE >858:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+451 code CODE >859:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+452 code CODE >860:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+453 code CODE >862:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+454 code CODE >863:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+455 code CODE >864:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+456 code CODE >865:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+457 code CODE >868:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+458 code CODE >869:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+459 code CODE >870:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45A code CODE >871:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45B code CODE >872:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45C code CODE >873:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45D code CODE >874:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45E code CODE >875:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+45F code CODE >878:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+460 code CODE >879:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+461 code CODE >880:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+462 code CODE >881:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+463 code CODE >882:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+464 code CODE >883:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+465 code CODE >884:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+466 code CODE >887:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+467 code CODE >888:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+468 code CODE >889:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+469 code CODE >890:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46A code CODE >891:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46B code CODE >892:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46C code CODE >893:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46D code CODE >896:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46E code CODE >897:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+46F code CODE >898:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+470 code CODE >899:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+471 code CODE >900:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+472 code CODE >901:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+473 code CODE >902:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+474 code CODE >905:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+475 code CODE >906:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+476 code CODE >907:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+477 code CODE >908:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+478 code CODE >909:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+479 code CODE >910:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47A code CODE >911:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47B code CODE >914:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47C code CODE >915:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47D code CODE >916:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47E code CODE >917:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+47F code CODE >918:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+480 code CODE >919:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+481 code CODE >922:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+482 code CODE >923:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+483 code CODE >924:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+484 code CODE >925:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+485 code CODE >926:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+486 code CODE >927:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+487 code CODE >930:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+488 code CODE >931:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+489 code CODE >932:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48A code CODE >933:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48B code CODE >934:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48C code CODE >935:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48D code CODE >938:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48E code CODE >939:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+48F code CODE >940:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+490 code CODE >941:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+491 code CODE >942:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+492 code CODE >943:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+493 code CODE >946:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+494 code CODE >947:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+495 code CODE >948:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+496 code CODE >949:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+497 code CODE >950:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+498 code CODE >951:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+499 code CODE >954:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49A code CODE >955:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49B code CODE >956:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49C code CODE >957:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49D code CODE >958:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49E code CODE >959:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+49F code CODE >962:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A0 code CODE >963:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A1 code CODE >964:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A2 code CODE >965:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A3 code CODE >966:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A4 code CODE >967:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A5 code CODE >970:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A6 code CODE >971:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A7 code CODE >972:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A8 code CODE >973:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4A9 code CODE >974:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AA code CODE >975:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AB code CODE >978:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AC code CODE >979:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AD code CODE >980:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AE code CODE >981:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4AF code CODE >982:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B0 code CODE >983:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B1 code CODE >986:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B2 code CODE >987:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B3 code CODE >988:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B4 code CODE >989:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B5 code CODE >990:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B6 code CODE >991:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B7 code CODE >994:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B8 code CODE >995:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4B9 code CODE >996:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BA code CODE >997:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BB code CODE >998:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BC code CODE >999:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BD code CODE >1002:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BE code CODE >1003:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4BF code CODE >1004:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C0 code CODE >1005:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C1 code CODE >1006:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C2 code CODE >1007:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C3 code CODE >1010:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C4 code CODE >1011:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C5 code CODE >1012:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C6 code CODE >1013:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C7 code CODE >1014:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C8 code CODE >1015:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4C9 code CODE >1018:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CA code CODE >1019:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CB code CODE >1020:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CC code CODE >1021:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CD code CODE >1022:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CE code CODE >1023:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4CF code CODE >1026:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D0 code CODE >1027:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D1 code CODE >1028:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D2 code CODE >1029:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D3 code CODE >1030:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D4 code CODE >1031:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D5 code CODE >1034:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D6 code CODE >1035:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D7 code CODE >1036:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D8 code CODE >1037:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4D9 code CODE >1038:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DA code CODE >1039:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DB code CODE >1042:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DC code CODE >1043:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DD code CODE >1044:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DE code CODE >1045:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4DF code CODE >1046:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E0 code CODE >1047:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E1 code CODE >1050:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E2 code CODE >1051:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E3 code CODE >1052:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E4 code CODE >1053:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E5 code CODE >1054:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E6 code CODE >1055:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E7 code CODE >1058:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E8 code CODE >1059:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4E9 code CODE >1060:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4EA code CODE >1061:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4EB code CODE >1062:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4EC code CODE >1063:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4ED code CODE >1066:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4EE code CODE >1067:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4EF code CODE >1068:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F0 code CODE >1069:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F1 code CODE >1070:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F2 code CODE >1073:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F3 code CODE >1074:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F4 code CODE >1075:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F5 code CODE >1078:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F6 code CODE >1079:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F7 code CODE >1080:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F8 code CODE >1083:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4F9 code CODE >1084:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FA code CODE >1085:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FB code CODE >1088:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FC code CODE >1089:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FD code CODE >1090:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FE code CODE >1093:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+4FF code CODE >1094:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+500 code CODE >1095:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+501 code CODE >1098:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+502 code CODE >1099:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+503 code CODE >1100:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+504 code CODE >1101:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+505 code CODE >1102:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+506 code CODE >1103:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+507 code CODE >1104:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+508 code CODE >1107:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+509 code CODE >1108:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50A code CODE >1111:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50B code CODE >1112:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50C code CODE >1113:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50D code CODE >1114:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50E code CODE >1115:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+50F code CODE >1116:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+510 code CODE >1117:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+511 code CODE >1120:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+512 code CODE >1121:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+513 code CODE >1122:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+514 code CODE >1125:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+515 code CODE >1126:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+516 code CODE >1127:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+517 code CODE >1130:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+518 code CODE >1131:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+519 code CODE >1132:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51A code CODE >1135:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51B code CODE >1136:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51C code CODE >1137:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51D code CODE >1138:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51E code CODE >1139:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+51F code CODE >1140:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+520 code CODE >1141:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+521 code CODE >1142:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+522 code CODE >1145:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+523 code CODE >1146:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+524 code CODE >1147:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+525 code CODE >1148:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+526 code CODE >1149:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+527 code CODE >1150:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+528 code CODE >1151:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+529 code CODE >1152:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52A code CODE >1155:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52B code CODE >1156:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52C code CODE >1157:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52D code CODE >1158:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52E code CODE >1159:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+52F code CODE >1160:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+530 code CODE >1161:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+531 code CODE >1162:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+532 code CODE >1165:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+533 code CODE >1166:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+534 code CODE >1167:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+535 code CODE >1170:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+536 code CODE >1171:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+537 code CODE >1172:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+538 code CODE >1173:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+539 code CODE >1174:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53A code CODE >1175:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53B code CODE >1176:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53C code CODE >1179:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53D code CODE >1180:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53E code CODE >1183:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+53F code CODE >1184:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+540 code CODE >1187:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+541 code CODE >1188:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+542 code CODE >1191:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+543 code CODE >1192:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+544 code CODE >1194:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+545 code CODE >1195:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+546 code CODE >1196:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+547 code CODE >1199:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+548 code CODE >1200:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+549 code CODE >1201:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54A code CODE >1202:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54B code CODE >1203:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54C code CODE >1204:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54D code CODE >1205:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54E code CODE >1208:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+54F code CODE >1209:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+550 code CODE >1212:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+551 code CODE >1213:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+552 code CODE >1216:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+553 code CODE >1217:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+554 code CODE >1220:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+555 code CODE >1221:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+556 code CODE >1224:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+557 code CODE >1225:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+558 code CODE >1226:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+559 code CODE >1227:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55A code CODE >1228:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55B code CODE >1229:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55C code CODE >1230:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55D code CODE >1233:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55E code CODE >1234:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+55F code CODE >1237:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+560 code CODE >1238:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+561 code CODE >1241:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+562 code CODE >1242:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+563 code CODE >1245:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+564 code CODE >1246:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+565 code CODE >1249:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+566 code CODE >1250:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+567 code CODE >1252:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+568 code CODE >1253:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+569 code CODE >1254:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56A code CODE >1257:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56B code CODE >1258:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56C code CODE >1259:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56D code CODE >1260:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56E code CODE >1261:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+56F code CODE >1262:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+570 code CODE >1263:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+571 code CODE >1266:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+572 code CODE >1267:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+573 code CODE >1270:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+574 code CODE >1271:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+575 code CODE >1274:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+576 code CODE >1275:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+577 code CODE >1278:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+578 code CODE >1279:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+579 code CODE >1282:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57A code CODE >1283:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57B code CODE >1284:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57C code CODE >1285:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57D code CODE >1286:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57E code CODE >1287:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+57F code CODE >1288:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+580 code CODE >1291:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+581 code CODE >1292:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+582 code CODE >1295:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+583 code CODE >1296:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+584 code CODE >1299:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+585 code CODE >1300:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+586 code CODE >1303:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+587 code CODE >1304:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+588 code CODE >1306:C:\Users\User\MPLABXProjects\proyecto1.X\proyecto1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 588 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 47 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
